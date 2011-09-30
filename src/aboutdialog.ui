@@ -1,0 +1,134 @@
+<ui version="4.0" >
+ <class>AboutDialog</class>
+ <widget class="QDialog" name="AboutDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>333</width>
+    <height>101</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>QBachelor - About</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="application.qrc" >:/info.png</iconset>
+  </property>
+  <layout class="QHBoxLayout" >
+   <item>
+    <layout class="QVBoxLayout" >
+     <item>
+      <widget class="QLabel" name="label" >
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="pixmap" >
+        <pixmap resource="application.qrc" >:/qbachelor.png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>20</width>
+         <height>0</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" >
+     <item>
+      <layout class="QHBoxLayout" >
+       <item>
+        <widget class="QLabel" name="label_2" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Preferred" hsizetype="Fixed" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text" >
+          <string>Copyright:</string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3" >
+         <property name="text" >
+          <string>Viktoria Krolikowski 2011
+&lt;viktoria.krolikowski@yahoo.de></string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>16</width>
+         <height>0</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" >
+       <item>
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="buttonLicense" >
+         <property name="text" >
+          <string>&amp;License</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="buttonClose" >
+         <property name="text" >
+          <string>&amp;Close</string>
+         </property>
+         <property name="default" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="application.qrc" />
+ </resources>
+ <connections/>
+</ui>

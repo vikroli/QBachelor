@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>add.png</file>
+        <file>down.png</file>
+        <file>exit.png</file>
+        <file>filenew.png</file>
+        <file>fileopen.png</file>
+        <file>filesave.png</file>
+        <file>filesaveas.png</file>
+        <file>green.png</file>
+        <file>info.png</file>
+        <file>license.txt</file>
+        <file>qbachelor.png</file>
+        <file>qt-logo.png</file>
+        <file>red.png</file>
+        <file>remove.png</file>
+        <file>up.png</file>
+        <file>yellow.png</file>
+    </qresource>
+</RCC>

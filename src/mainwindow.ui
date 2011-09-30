@@ -1,0 +1,501 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>637</width>
+    <height>489</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>QBachelor</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="application.qrc" >:/qbachelor.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QHBoxLayout" >
+    <item>
+     <layout class="QVBoxLayout" >
+      <item>
+       <widget class="QListWidget" name="subject_list" />
+      </item>
+      <item>
+       <layout class="QHBoxLayout" >
+        <item>
+         <widget class="QPushButton" name="buttonAddSubject" >
+          <property name="statusTip" >
+           <string>Append a new subject to the list</string>
+          </property>
+          <property name="icon" >
+           <iconset resource="application.qrc" >:/add.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="buttonDeleteSubject" >
+          <property name="statusTip" >
+           <string>Remove the selected subject from the list</string>
+          </property>
+          <property name="text" >
+           <string/>
+          </property>
+          <property name="icon" >
+           <iconset resource="application.qrc" >:/remove.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="buttonSubjectUp" >
+          <property name="statusTip" >
+           <string>Move the selected subject up</string>
+          </property>
+          <property name="text" >
+           <string/>
+          </property>
+          <property name="icon" >
+           <iconset resource="application.qrc" >:/up.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="buttonSubjectDown" >
+          <property name="statusTip" >
+           <string>Move the selected subject down</string>
+          </property>
+          <property name="text" >
+           <string/>
+          </property>
+          <property name="icon" >
+           <iconset resource="application.qrc" >:/down.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QWidget" native="1" name="widget" >
+      <property name="sizePolicy" >
+       <sizepolicy vsizetype="Preferred" hsizetype="Fixed" >
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QVBoxLayout" >
+       <property name="leftMargin" >
+        <number>0</number>
+       </property>
+       <property name="topMargin" >
+        <number>0</number>
+       </property>
+       <property name="rightMargin" >
+        <number>0</number>
+       </property>
+       <property name="bottomMargin" >
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="groupBox" >
+         <property name="title" >
+          <string>Subject</string>
+         </property>
+         <layout class="QVBoxLayout" >
+          <item>
+           <layout class="QGridLayout" >
+            <item row="0" column="0" >
+             <widget class="QLabel" name="label" >
+              <property name="text" >
+               <string>&amp;Name:</string>
+              </property>
+              <property name="buddy" >
+               <cstring>subject_name</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1" >
+             <widget class="QLineEdit" name="subject_name" />
+            </item>
+            <item row="1" column="0" >
+             <widget class="QLabel" name="label_2" >
+              <property name="text" >
+               <string>&amp;Grade:</string>
+              </property>
+              <property name="buddy" >
+               <cstring>subject_grade</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" >
+             <widget class="QComboBox" name="subject_grade" >
+              <item>
+               <property name="text" >
+                <string>not compeeded</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>1.0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>1.3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>1.7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>2.0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>2.3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>2.7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>3.0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>3.3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>3.7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>4.0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>passed</string>
+               </property>
+              </item>
+              <item>
+               <property name="text" >
+                <string>failed</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="0" >
+             <widget class="QLabel" name="label_3" >
+              <property name="text" >
+               <string>&amp;Credit-Points:</string>
+              </property>
+              <property name="buddy" >
+               <cstring>subject_cps</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1" >
+             <widget class="QSpinBox" name="subject_cps" />
+            </item>
+            <item row="3" column="0" >
+             <widget class="QLabel" name="label_4" >
+              <property name="text" >
+               <string>&amp;Semester periods per week:</string>
+              </property>
+              <property name="buddy" >
+               <cstring>subject_sppw</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1" >
+             <widget class="QSpinBox" name="subject_sppw" />
+            </item>
+            <item row="4" column="0" >
+             <widget class="QLabel" name="label_5" >
+              <property name="text" >
+               <string>&amp;Trials:</string>
+              </property>
+              <property name="buddy" >
+               <cstring>subject_trials</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1" >
+             <widget class="QSpinBox" name="subject_trials" />
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" >
+            <item>
+             <widget class="QPushButton" name="buttonSubjectApply" >
+              <property name="statusTip" >
+               <string>Apply the values to the selected subject</string>
+              </property>
+              <property name="text" >
+               <string>&amp;Apply</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer>
+              <property name="orientation" >
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" >
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2" >
+         <property name="title" >
+          <string>Overall</string>
+         </property>
+         <layout class="QVBoxLayout" >
+          <item>
+           <layout class="QHBoxLayout" >
+            <item>
+             <widget class="QLabel" name="overall_cps_label" />
+            </item>
+            <item>
+             <widget class="QLabel" name="overall_grade_label" />
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QGridLayout" >
+            <item row="0" column="0" >
+             <widget class="QLabel" name="label_7" >
+              <property name="text" >
+               <string>Credit-Points:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1" >
+             <widget class="QProgressBar" name="overall_cps_bar" >
+              <property name="value" >
+               <number>24</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" >
+             <widget class="QLabel" name="label_8" >
+              <property name="text" >
+               <string>Grade:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" >
+             <widget class="QProgressBar" name="overall_grade_bar" >
+              <property name="value" >
+               <number>24</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>235</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>637</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile" >
+    <property name="title" >
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionNew" />
+    <addaction name="actionOpen" />
+    <addaction name="separator" />
+    <addaction name="actionSave" />
+    <addaction name="actionSaveAs" />
+    <addaction name="actionSaveTemplateAs" />
+    <addaction name="separator" />
+    <addaction name="actionQuit" />
+   </widget>
+   <widget class="QMenu" name="menuHelp" >
+    <property name="title" >
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAboutQt" />
+    <addaction name="actionAbout" />
+   </widget>
+   <widget class="QMenu" name="menuLanguages" >
+    <property name="title" >
+     <string>Languages</string>
+    </property>
+   </widget>
+   <addaction name="menuFile" />
+   <addaction name="menuLanguages" />
+   <addaction name="menuHelp" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <widget class="QToolBar" name="toolBar" >
+   <property name="windowTitle" >
+    <string>MainToolBar</string>
+   </property>
+   <attribute name="toolBarArea" >
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak" >
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew" />
+   <addaction name="actionOpen" />
+   <addaction name="actionSave" />
+   <addaction name="actionQuit" />
+  </widget>
+  <action name="actionNew" >
+   <property name="icon" >
+    <iconset resource="application.qrc" >:/filenew.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;New</string>
+   </property>
+   <property name="statusTip" >
+    <string>Create a new and empty file</string>
+   </property>
+  </action>
+  <action name="actionOpen" >
+   <property name="icon" >
+    <iconset resource="application.qrc" >:/fileopen.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Open</string>
+   </property>
+   <property name="statusTip" >
+    <string>Open a Bachelor File</string>
+   </property>
+  </action>
+  <action name="actionSave" >
+   <property name="icon" >
+    <iconset resource="application.qrc" >:/filesave.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Save</string>
+   </property>
+   <property name="statusTip" >
+    <string>Save this file</string>
+   </property>
+  </action>
+  <action name="actionSaveAs" >
+   <property name="icon" >
+    <iconset resource="application.qrc" >:/filesaveas.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Save &amp;as...</string>
+   </property>
+   <property name="statusTip" >
+    <string>Save this file at a specific location</string>
+   </property>
+  </action>
+  <action name="actionSaveTemplateAs" >
+   <property name="icon" >
+    <iconset resource="application.qrc" >:/filesaveas.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Save &amp;template as...</string>
+   </property>
+   <property name="statusTip" >
+    <string>Save this file as a Bachelor template</string>
+   </property>
+  </action>
+  <action name="actionQuit" >
+   <property name="icon" >
+    <iconset resource="application.qrc" >:/exit.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Quit</string>
+   </property>
+   <property name="statusTip" >
+    <string>Quit QBachelor</string>
+   </property>
+  </action>
+  <action name="actionAbout" >
+   <property name="icon" >
+    <iconset resource="application.qrc" >:/info.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;About</string>
+   </property>
+   <property name="statusTip" >
+    <string>About QBachelor</string>
+   </property>
+  </action>
+  <action name="actionAboutQt" >
+   <property name="icon" >
+    <iconset resource="application.qrc" >:/qt-logo.png</iconset>
+   </property>
+   <property name="text" >
+    <string>About &amp;Qt</string>
+   </property>
+   <property name="statusTip" >
+    <string>About Qt</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="application.qrc" />
+ </resources>
+ <connections/>
+</ui>
